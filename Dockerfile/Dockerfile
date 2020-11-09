@@ -14,4 +14,3 @@ RUN pip install pytz --proxy http://proxygate2.nic.nec.co.jp:8080/
 
 EXPOSE 5000
 CMD ["python", "/post_app/post_app/mediaPost.py"]
-
