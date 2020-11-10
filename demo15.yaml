@@ -29,7 +29,11 @@ spec:
     spec:
       containers:
       - name: demo-image
-        image: demo-app
-        imagePullPolicy: Never
+        #image: demo-app
+        #imagePullPolicy: Never
+        image: 12010908/demo-app
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
+      imagePullSecrets:
+        - name: docker-secret
