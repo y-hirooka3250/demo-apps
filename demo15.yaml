@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: demo-image
-        image: demo-shop-app
+        image: demo-app
         imagePullPolicy: Never
         ports:
         - containerPort: 80
