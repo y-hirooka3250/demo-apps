@@ -6,11 +6,11 @@ COPY post_app /post_app/post_app
 
 WORKDIR /post_app/post_app
 
-RUN pip install --upgrade pip --proxy http://10.51.8.102:8080/
-RUN pip install flask --proxy http://10.51.8.102:8080/
-RUN pip install flask-login --proxy http://10.51.8.102:8080/
-RUN pip install mariadb --proxy http://10.51.8.102:8080/
-RUN pip install pytz --proxy http://10.51.8.102:8080/
+RUN pip install --upgrade pip
+RUN pip install flask
+RUN pip install flask-login
+RUN pip install mariadb
+RUN pip install pytz
 
 EXPOSE 5000
 CMD ["python", "/post_app/post_app/mediaPost.py"]
