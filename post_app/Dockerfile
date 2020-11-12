@@ -14,3 +14,4 @@ RUN pip install pytz
 
 EXPOSE 5000
 CMD ["python", "/post_app/post_app/mediaPost.py"]
+
