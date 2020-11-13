@@ -102,9 +102,11 @@ def upload_post():
     conn.close()
 
     return render_template('post.html', \
-        title = '記事投稿(同期)', \
+        title = '記事投稿(同期)v1.0', \
         message = '記事の投稿が完了しました', \
         flag = False)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",port=8080,debug=True)
+
+
