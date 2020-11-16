@@ -102,7 +102,7 @@ def upload_post():
     conn.close()
 
     return render_template('post.html', \
-        title = '記事投稿(同期)v1.0', \
+        title = '記事投稿(同期)v1.1', \
         message = '記事の投稿が完了しました', \
         flag = False)
 
